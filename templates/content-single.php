@@ -72,6 +72,7 @@ padding: 0px 0em 0em 1.5em;
 
     <div class="entry-content">
       <?php the_content(); ?>
+
     </div>
   </div>
     <footer>

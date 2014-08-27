@@ -26,8 +26,10 @@
 </div> <!-- end row div -->
 
   </div>  
-<div class="jumbotron slide1 full-wrapper hero-image">
-
+<div class="jumbotron slide1 full-wrapper hero-image row">
+  <div class="col-md-offset-3 col-md-6">
+  <a href="http://www.terriblerecordsus.com/index.php?/releases/"> SHOP </a>
+</div>
 </div>
 <div class="slide2">
   <div id="navbar-wrapper" data-spy="affix" data-offset-top="816" >

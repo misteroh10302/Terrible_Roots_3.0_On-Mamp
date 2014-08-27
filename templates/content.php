@@ -6,5 +6,6 @@
 
   <div class="entry-summary">
     <?php the_excerpt(); ?>
+    <?php get_post_meta(get_the_ID(), 'price_key', true); ?>
   </div>
 </article>

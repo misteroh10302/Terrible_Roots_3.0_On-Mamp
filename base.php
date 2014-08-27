@@ -26,7 +26,7 @@
    </div>
 </div> <!-- end row div -->
 
-  </div>  
+  </div>  <!-- end top posts -->
   <div class="main_header" style="opacity:0;">
   <?php
     do_action('get_header');
@@ -71,18 +71,23 @@ opacity:1 !important;
 
 $(window).scroll(function() {
     $(".main_header").css({
-    'opacity' : 0+(($(this).scrollTop())/65)
+    'opacity' : 0+(($(this).scrollTop())/100)
     });          
 }); 
 
 
 $(window).scroll(function() {
     $(".second_header").css({
-    'opacity' : 1-(($(this).scrollTop())/65)
+    'opacity' : 1-(($(this).scrollTop())/80)
     });          
 }); 
 
 
+$(window).scroll(function() {
+    $(".top_posts").css({
+    'opacity' : 1-(($(this).scrollTop())/70)
+    });          
+}); 
     
 
 
