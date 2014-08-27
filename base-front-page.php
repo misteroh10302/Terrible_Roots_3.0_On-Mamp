@@ -30,7 +30,7 @@
 
 </div>
 <div class="slide2">
-  <div id="navbar-wrapper" data-spy="affix" data-offset-top="780" >
+  <div id="navbar-wrapper" data-spy="affix" data-offset-top="816" >
   <?php
     do_action('get_header');
     get_template_part('templates/header');
@@ -135,7 +135,7 @@ $(function(){
 /* activate sidebar */
 $('#sidebar').affix({
   offset: {
-    top: 780
+    top: 816
   }
 });
 
@@ -143,7 +143,7 @@ $('#sidebar').affix({
 /* activate sidebar */
 $('#content').affix({
   offset: {
-    top: 780
+    top: 816
 
   }
 });
