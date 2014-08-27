@@ -1,0 +1,75 @@
+// Bootstrap
+@import "_bootstrap";
+
+// Roots
+@import "_global";                   // Base styling & custom mixins
+@import "components/_buttons";       // Button tweaks
+@import "components/_forms";         // Form tweaks
+@import "components/_media";         // WordPress media
+@import "components/_wp-classes";    // WordPress generated classes
+@import "layouts/_general";          // General styling
+@import "layouts/_header";           // Header styling
+@import "layouts/_sidebar";          // Sidebar styling
+@import "layouts/_footer";           // Footer styling
+@import "layouts/_pages";            // Page styling
+@import "layouts/pages/_home";       // Home page styling
+@import "layouts/_posts";            // Post styling
+@import "layouts/_artistspage";      // Artists styling
+@import "layouts/_homepagebase";    // Homepage styling
+
+aside.sidebar {
+	display:none;
+}
+
+ body {
+    margin-top: -28px;
+    padding-bottom: 28px;
+    }
+    body.admin-bar #wphead {
+       padding-top: 0;
+    }
+    body.admin-bar #footer {
+       padding-bottom: 28px;
+    }
+    #wpadminbar {
+        top: auto !important;
+        bottom: 0;
+    }
+    #wpadminbar .quicklinks .menupop ul {
+        bottom: 28px;
+    }
+
+
+
+.btn-default {
+color: #333333;
+background-color: #ffffff;
+border-color: #000000;
+}
+
+
+.btn {
+border-radius: 0px;
+
+}
+
+
+.top_posts {
+  position: fixed;
+width: 100%;
+height: 3em;
+z-index: 1100;
+margin-top: -3em;
+padding-top: .5em;
+}
+
+
+.container-color {
+    margin-top: 3em;
+}
+
+
+
+
+
+
