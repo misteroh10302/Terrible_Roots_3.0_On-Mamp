@@ -114,6 +114,7 @@ background-color: transparent;
 .back {
   margin-bottom: 2em;
   margin-top: 2em;
+  text-align: right;
 }
 
 
@@ -145,13 +146,17 @@ color: gray;
 
 
 // Resize the Header after 992
-@media (max-width: 992px) {
+@media screen and (max-width: 992px) {
   .navbar-default {
       font-size: 1.1em;
   }
  
-  a.navbar-brand {
-  padding-left: 4em;
+
+}
+
+@media screen and (min-device-width : 320px) and (max-device-width : 480px) {
+    a.navbar-brand {
+  padding-left: 2em;
   }
 }
 
@@ -160,3 +165,13 @@ color: gray;
 
   float: left;
 }
+
+
+.glyphicon.home {
+  float: right;
+  padding: 12px 15px;
+  font-size: 18px;
+  line-height: 20px;
+  height: 50px;
+}
+

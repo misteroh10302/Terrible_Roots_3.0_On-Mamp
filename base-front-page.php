@@ -12,14 +12,14 @@
 
   <div class=" col-sm-offset-1 col-md-2">
     <ul class="list-inline">
-      <li><span class="glyphicon glyphicon-headphones"></span></li>
-      <li><span class="glyphicon glyphicon-music"></span></li>
+      <li><span class="glyphicon glyphicon-headphones home"></span></li>
+      <li><span class="glyphicon glyphicon-music home"></span></li>
     </ul>
    
   </div>
    <div class="col-md-offset-10 col-md-1" id="topcart_right">
     <ul class="list-inline">
-      <li><span class="glyphicon glyphicon-headphones"></span></li>
+      <li><span class="glyphicon glyphicon-headphones home"></span></li>
     </ul>
 
    </div>

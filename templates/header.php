@@ -7,7 +7,11 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
+
       <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
+
+      <span class="glyphicon glyphicon-headphones home visible-xs"></span>
+     
     </div>
 
     <nav class="collapse navbar-collapse" role="navigation">
