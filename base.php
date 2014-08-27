@@ -27,7 +27,7 @@
 </div> <!-- end row div -->
 
   </div>  <!-- end top posts -->
-  <div class="main_header" style="opacity:0;">
+  <div class="main_header" style="opacity:0;" >
   <?php
     do_action('get_header');
     get_template_part('templates/header');
