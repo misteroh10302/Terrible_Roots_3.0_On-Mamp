@@ -22,7 +22,7 @@
             </p>
         </div>
       </a>
-        <div class="col-md-offset-2 col-md-2">
+        <div class="col-md-offset-1 col-md-2">
             <p class="certified"> © 2014 Done Digital </p>
         </div>
 

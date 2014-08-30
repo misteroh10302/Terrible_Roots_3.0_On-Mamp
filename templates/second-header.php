@@ -1,4 +1,4 @@
-<header class="banner navbar navbar-default navbar-static-top second_header hidden-lg" role="banner" >
+<header class="banner navbar navbar-default navbar-static-top second_header hidden-lg hidden-md hidden-sm" role="banner" >
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
