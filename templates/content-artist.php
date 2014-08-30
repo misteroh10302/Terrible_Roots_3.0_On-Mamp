@@ -1,3 +1,12 @@
+<style> 
+
+img{
+width: 250px;
+height: 250px;
+}
+
+</style>
+
 
 <div class="artists_content row">
 
@@ -18,7 +27,7 @@
            <?php if ( has_post_thumbnail() ) : ?>
            <div class="col-md-4">
           <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
-          <?php the_post_thumbnail('medium'); ?>
+          <?php the_post_thumbnail('thumbnail'); ?>
           </a>
           <h3 id="post-<?php the_ID(); ?>">
           <a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>">

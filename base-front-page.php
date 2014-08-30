@@ -10,19 +10,18 @@
 <div class="top_banner">
 <div class="row">
 
-  <div class=" col-sm-offset-1 col-md-2">
-    <ul class="list-inline">
-      <li><span class="glyphicon glyphicon-headphones home"></span></li>
-      <li><span class="glyphicon glyphicon-music home"></span></li>
-    </ul>
-   
-  </div>
-   <div class="col-md-offset-10 col-md-1" id="topcart_right">
-    <ul class="list-inline">
-      <li><span class="glyphicon glyphicon-headphones home"></span></li>
-    </ul>
+  <div class="col-md-2">
+         <ul class="list-inline">
+                      <a href="https://www.facebook.com/pages/Terrible-Records/120038475702"><li class="icon_fb"></li></a>
+                      <a href="https://twitter.com/TerribleRecords"><li class="icon_twitter"></li></a>
+                      <a href="http://instagram.com/terriblerecords"><li class="icon_insta"></li></a>
+                      <a href="https://www.youtube.com/user/TerribleRecords"><li class="icon_youtube"></li></a>
+                      <a href="https://soundcloud.com/terrible-records"><li class="icon_sc"></li></a>
 
-   </div>
+
+                    </ul>
+
+  </div>
 </div> <!-- end row div -->
 
   </div>  
@@ -32,7 +31,7 @@
 </div>
 </div>
 <div class="slide2">
-  <div id="navbar-wrapper" data-spy="affix" data-offset-top="816" >
+  <div id="navbar-wrapper" data-spy="affix" data-offset-top="515" >
   <?php
     do_action('get_header');
     get_template_part('templates/header');
@@ -46,7 +45,7 @@
             <h2> Terrible News </h2>
 
           </div> <!-- end 4 column row -->
-          <div class="col-md-8 row" id="content" >
+          <div class="col-md-7 row" id="content" >
 
             <?php query_posts('category=artists&showposts=4'); ?>
               <?php if (!have_posts()) : ?>
@@ -58,7 +57,7 @@
 
           <?php while (have_posts()) : the_post(); ?>
            <?php if ( has_post_thumbnail() ) : ?>
-           <div class="col-md-6">
+           <div class="col-md-8 col-lg-6">
           <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
             <div class="fade">
           <?php the_post_thumbnail('medium'); ?>
@@ -137,7 +136,7 @@ $(function(){
 /* activate sidebar */
 $('#sidebar').affix({
   offset: {
-    top: 816
+    top: 515
   }
 });
 
@@ -145,7 +144,7 @@ $('#sidebar').affix({
 /* activate sidebar */
 $('#content').affix({
   offset: {
-    top: 816
+    top: 515
 
   }
 });

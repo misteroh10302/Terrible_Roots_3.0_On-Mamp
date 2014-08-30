@@ -18,3 +18,13 @@ Template Name: About Template
 
 </div> <!-- end artists main container-->
 
+<style>
+ .contact_main { background-image: url('/wordpress/wp-content/themes/Terrible_Roots_3.0/Assets/img/about_bg.jpg'); 
+            		background-repeat: no-repeat;
+            		height:550px;
+            		background-size: 85%;
+            		background-position: 50%;
+            		 width: 100%;
+            		 margin-top: -2em;}
+
+            </style>

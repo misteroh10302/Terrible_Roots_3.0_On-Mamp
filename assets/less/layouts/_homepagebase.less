@@ -36,19 +36,20 @@ aside.sidebar {
 // Curtain Reveal Styles
 
 
+
 * { margin: 0; padding: 0 }
 .slide1 { 
     position: fixed;
     top: 10p;
     left: 0;
     z-index: 0;  /* sets it below the other slides in the layer stack */
-    width: 100%;
-    height:600px;
+    max-width: 100%;
+    height:100%;
 }
 .slide2 {
     position: relative;
     z-index: 10;  /* sets it above .slide1  */
-    margin-top: 60%; /* this pushes it below .slide1 in the scroll */
+    margin-top: 37%; /* this pushes it below .slide1 in the scroll */
     height: 250%; /* full length slides */
     width: 100%;
     background: white  ;
@@ -101,6 +102,8 @@ aside.sidebar {
 
 .top_banner {
   height: 3em; 
+  padding-top:.5em;
+  padding-bottom:1em;
   color:black ;
   z-index: 15;
   position: static;
@@ -108,16 +111,21 @@ aside.sidebar {
 
 }
 
+.top_banner .list-inline{
+  position: fixed;
+
+}
+
 .top_banner .glyphicon{
   font-size: 1.5em;
   position: fixed;
-
-
 
 }
 
 .top_banner li {
   padding-right: 1.5em !important;
+  opacity: 0.3;
+
 }
 
 
@@ -156,9 +164,9 @@ aside.sidebar {
 	}
 
   #sidebar.affix {
-    position: fixed;
-    top: 8em;
-    padding-left: .5em;
+position: fixed;
+top: 8.65em;
+padding-left: .44em;
     }
 
   #content.affix-top {
@@ -169,7 +177,7 @@ aside.sidebar {
    
    #content.affix {
     position: static;
-    margin-top:10em;
+    margin-top:10.5em;
     margin-left: 27.33em;
   }
 
@@ -193,6 +201,7 @@ aside.sidebar {
 	  display: inline-block;
 	  float: none;
 	  font-family: logo;
+    font-weight: bolder;
 	}
 
 	.navbar .navbar-collapse {
@@ -203,8 +212,7 @@ aside.sidebar {
 	#menu-primary-navigation li a {
 
 	  text-transform: uppercase;
-	  font-weight: 500;
-	  font-size: .8em;
+	  font-size: .6em;
 	}
 
 	.navbar-default {
@@ -222,17 +230,131 @@ aside.sidebar {
 	}
 
 .navbar-default .navbar-brand {
-font-family:logo;
+  font-family: main;
+letter-spacing: .2em;
+
 }
 
 .menu-terrible-records {
-  font-size: 2em;
+  font-size: 1.5em;
+  font-family: main;
+  margin-top: -.1em;
 }
 
 
 @media screen and (min-width: 992px) {
   .navbar-brand {
   display:none;
-}
 
 }
+
+  .nav > li > a {
+  padding: 20px 33.5px 10px;
+  }
+
+}
+
+#sidebar h2 {
+  text-align: left;
+margin-left: .4em;
+
+}
+
+
+
+.icon_youtube, .icon_sc, .icon_insta, .icon_fb, .icon_twitter, .icon_terrible1, .icon_terrible2{
+  background: url(/wordpress/wp-content/themes/Terrible_Roots_3.0/assets/img/sprites.png) no-repeat;
+}
+
+.icon_youtube{
+  background-position: -98px 0;
+  min-width: 32px;
+  min-height: 32px;
+  display: inline-block;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.icon_youtube:hover {
+  opacity: .4;
+}
+
+.icon_sc{
+  background-position: -131px -1px ;
+  min-width: 32px;
+  min-height: 32px;
+  display: inline-block;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.icon_sc:hover { 
+opacity: .4;
+
+}
+.icon_insta{
+  background-position: -65px 0;
+  min-width: 32px;
+  min-height: 32px;
+  display: inline-block;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+
+.icon_insta:hover {
+  opacity: .4;
+
+}
+.icon_fb{
+  background-position: 0 0;
+  min-width: 32px;
+  min-height: 32px;
+  display: inline-block;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+
+.icon_fb:hover {
+    opacity: .4;
+
+}
+.icon_twitter{
+  background-position: -32px 0;
+  min-width: 32px;
+  min-height: 32px;
+  display: inline-block;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.icon_twitter:hover {
+  opacity: .4;
+
+}
+.icon_terrible1{
+  background-position: -166px 0;
+  min-width: 32px;
+  min-height: 32px;
+  display: inline-block;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+.icon_terrible2{
+  background-position: -198px 0;
+  min-width: 32px;
+  min-height: 32px;
+  display: inline-block;
+padding-left: 5px;
+padding-right: 5px;
+}
+
+
+
+#page-template-template-about-php logged-in admin-bar 
+  .page-header {
+    color:white;
+  }
+

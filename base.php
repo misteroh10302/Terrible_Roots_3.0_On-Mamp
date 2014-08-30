@@ -12,22 +12,21 @@
 <div class="row">
 
   <div class=" col-sm-offset-1 col-md-2">
-    <ul class="list-inline">
-      <li><span class="glyphicon glyphicon-headphones hidden-sm hidden-md"></span></li>
-      <li><span class="glyphicon glyphicon-music hidden-sm hidden-md"></span></li>
-    </ul>
-   
-  </div>
-   <div class="col-md-offset-7 col-md-1" id="topcart_right">
-    <ul class="list-inline">
-      <li><span class="glyphicon glyphicon-headphones hidden-sm hidden-md"></span></li>
-    </ul>
+     <ul class="list-inline hide">
+                      <a href="https://www.facebook.com/pages/Terrible-Records/120038475702"><li class="icon_fb"></li></a>
+                      <a href="https://twitter.com/TerribleRecords"><li class="icon_twitter"></li></a>
+                      <a href="http://instagram.com/terriblerecords"><li class="icon_insta"></li></a>
+                      <a href="https://www.youtube.com/user/TerribleRecords"><li class="icon_youtube"></li></a>
+                      <a href="https://soundcloud.com/terrible-records"><li class="icon_sc"></li></a>
+
+                    </ul>
+ 
 
    </div>
 </div> <!-- end row div -->
 
   </div>  <!-- end top posts -->
-  <div class="main_header" style="opacity:0;" >
+  <div class="main_header" style="opacity:1;" >
   <?php
     do_action('get_header');
     get_template_part('templates/header');
@@ -71,7 +70,7 @@ opacity:1 !important;
 
 $(window).scroll(function() {
     $(".main_header").css({
-    'opacity' : 0+(($(this).scrollTop())/100)
+    'opacity' : 1+(($(this).scrollTop())/100)
     });          
 }); 
 

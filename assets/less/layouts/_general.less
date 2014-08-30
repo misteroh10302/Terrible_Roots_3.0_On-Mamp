@@ -36,14 +36,26 @@
 }
 
 
-.menu-terrible-records {
-  font-size: 2em;
+@font-face {
+  font-family: Main;  
+  src: local('Museo300-Regular'), 
+    url("/wordpress/wp-content/themes/Terrible_Roots_3.0/Assets/fonts/terriblelogo.ttf") format('truetype');  
+  font-weight: normal;  
+}
+
+
+@font-face {
+  font-family: Terrible Medium;  
+  src: local('Museo300-Regular'), 
+    url("/wordpress/wp-content/themes/Terrible_Roots_3.0/Assets/fonts/TerribleMedium.otf") format('opentype');  
+  font-weight: normal;  
 }
 
 
 .wrap { 
 	font-family: logo;
   margin-bottom: 3em;
+
 }
 
 
@@ -66,4 +78,20 @@ background-color: transparent;
 
 .page-template-template-contact-php .container-color {
 background-color: rgb(239, 255, 251);
+}
+
+
+.entry-content ul {
+  text-align: left;
+  padding: 0px 6em 0em 6em;
+  list-style: none;
+    font-size:2em;
+    font-family: "Terrible Light";
+}
+
+.entry-content strong {
+  text-transform: uppercase;
+  font-family: "Logo";
+  text-decoration: underline;
+
 }

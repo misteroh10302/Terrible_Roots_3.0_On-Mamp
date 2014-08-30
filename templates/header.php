@@ -9,8 +9,6 @@
       </button>
 
       <a class="navbar-brand" href="<?php echo esc_url(home_url('/')); ?>"><?php bloginfo('name'); ?></a>
-
-      <span class="glyphicon glyphicon-headphones home visible-xs"></span>
      
     </div>
 
