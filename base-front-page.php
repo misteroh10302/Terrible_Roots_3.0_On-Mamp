@@ -1,6 +1,9 @@
 
 <?php get_template_part('templates/head'); ?>
 <body <?php body_class(); ?>>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery-scrollTo/1.4.3/jquery.scrollTo.min.js"></script>
+
 
   <!--[if lt IE 8]>
     <div class="alert alert-warning">
@@ -9,7 +12,20 @@
   <![endif]-->
 <div class="top_banner">
 <div class="row">
+<style> 
 
+}
+#navbar-wrapper.affix-top {
+  top: 0px;
+  -webkit-transition: all 5s ease;
+}
+
+#navbar-wrapper.affix {
+  top:0;
+  -webkit-transition: all 5s ease;
+}
+
+    </style>
   <div class="col-md-2">
          <ul class="list-inline">
                       <a href="https://www.facebook.com/pages/Terrible-Records/120038475702"><li class="icon_fb"></li></a>
@@ -31,7 +47,7 @@
 </div>
 </div>
 <div class="slide2">
-  <div id="navbar-wrapper" data-spy="affix" data-offset-top="515" >
+  <div id="navbar-wrapper" > <!-- data-spy="affix" data-offset-top="515" -->
   <?php
     do_action('get_header');
     get_template_part('templates/header');
@@ -132,11 +148,17 @@ $(function(){
     }
 });
 
+/* affix the navbar after scroll below header */
+$(function() {
+    $('#navbar-wrapper').affix({
+        offset: { top: $('.slide2').offset().top-$("#navbar-wrapper").height() }
+    });
+});
 
 /* activate sidebar */
 $('#sidebar').affix({
   offset: {
-    top: 515
+    top: $('.slide2').offset().top-$("#navbar-wrapper").height()
   }
 });
 
@@ -144,7 +166,7 @@ $('#sidebar').affix({
 /* activate sidebar */
 $('#content').affix({
   offset: {
-    top: 515
+    top: $('.slide2').offset().top-$("#navbar-wrapper").height()
 
   }
 });
@@ -161,6 +183,7 @@ $(window).scroll(function() {
     'opacity' : 1+(($(this).scrollTop())/590)
     });          
 }); 
+
 
 </script>
 
