@@ -28,6 +28,5 @@
 
     </div> <!-- end the second row -->
   </div>
-</footer>
 
 <?php wp_footer(); ?>
